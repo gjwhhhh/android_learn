@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.button);
+        imageView = (ImageView)findViewById(R.id.image_view);
         editText = (EditText)findViewById(R.id.edit_text);
         button.setOnClickListener(this);
     }
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 /*String inputText = editText.getText().toString();
                 Toast.makeText(MainActivity.this,inputText,Toast.LENGTH_SHORT)
                         .show();*/
-                imageView.setImageResource(R.drawable.image_2);
+                imageView.setImageResource(R.drawable.image_1);
                 break;
             default:
                 break;
