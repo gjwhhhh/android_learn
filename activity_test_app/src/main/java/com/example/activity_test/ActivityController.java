@@ -16,7 +16,8 @@ public class ActivityController {
     public static void finishAll(){
         for(Activity activity : activityList)
         {
-
+            activity.finish();
         }
+        activityList.clear();
     }
 }

@@ -2,6 +2,7 @@ package com.example.activity_test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class SecondActivity extends BaseActivity {
+    public static void actionStart(Context context,String data1,String data2){
+        Intent intent = new Intent(context,SecondActivity.class);
+        intent.putExtra("param1",data1);
+        intent.putExtra("param2",data2);
+        context.startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
@@ -26,6 +34,10 @@ public class SecondActivity extends BaseActivity {
         /*Intent intent = getIntent();
         String data = intent.getStringExtra("extra_data");
         Log.d("SecondActivity",data);*/
+        Intent intent = getIntent();
+        String data = intent.getStringExtra("param1");
+        Log.d("SecondActivity",data);
+
         Button button2 = (Button) findViewById(R.id.button_2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
