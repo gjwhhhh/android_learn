@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activity_test_app" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ui_app" />
           </set>
         </option>
       </GradleProjectSettings>

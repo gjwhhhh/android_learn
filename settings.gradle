@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "android_learn"
-include ':app'
 include ':activity_test_app'
+include ':ui_app'
