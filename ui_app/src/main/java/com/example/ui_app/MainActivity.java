@@ -1,5 +1,6 @@
 package com.example.ui_app;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*ActionBar actionBar = getSupportActionBar();
+        if(actionBar!=null){
+            actionBar.hide();
+        }*/
+
         Button button = (Button) findViewById(R.id.button);
         imageView = (ImageView)findViewById(R.id.image_view);
         editText = (EditText)findViewById(R.id.edit_text);

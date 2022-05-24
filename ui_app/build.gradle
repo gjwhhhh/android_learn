@@ -35,4 +35,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //引入百分比布局  参考 https://blog.csdn.net/qq_21331159/article/details/114024546
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
 }
