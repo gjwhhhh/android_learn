@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
         if(actionBar!=null){
             actionBar.hide();
-        }*/
+        }
 
         Button button = (Button) findViewById(R.id.button);
         imageView = (ImageView)findViewById(R.id.image_view);
